@@ -189,7 +189,7 @@
     "botAppUrl": "[concat('https://', variables('botAppDomain'))]",
     "hostingPlanName": "[parameters('baseResourceName')]",
     "storageAccountName": "ypfzpstapcco001",
-    "appInsightsName": "[parameters('baseResourceName')]",
+    "appInsightsName": "ypfzpaincco001",
     "prepFunctionAppName": "ypfzpafacco001",
     "sendFunctionAppName": "ypfzpafacco002",
     "dataFunctionAppName": "ypfzpafacco003",
