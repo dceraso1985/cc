@@ -439,9 +439,9 @@ function DeployARMTemplate {
         }
         
         $appServicesNames = [System.Collections.ArrayList]@($parameters.BaseResourceName.Value, #app-service
-        "$($parameters.BaseResourceName.Value)-prep-function", #prep-function
-        "$($parameters.BaseResourceName.Value)-function", #function
-        "$($parameters.BaseResourceName.Value)-data-function" #data-function
+        "ypfzpafacco001", #prep-function
+        "ypfzpafacco002", #function
+        "ypfzpafacco003" #data-function
         )
         
         $codeSynced = $false
