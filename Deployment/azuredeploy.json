@@ -188,7 +188,7 @@
     "botAppDomain": "[concat(variables('botAppName'), '.azurewebsites.net')]",
     "botAppUrl": "[concat('https://', variables('botAppDomain'))]",
     "hostingPlanName": "[parameters('baseResourceName')]",
-    "storageAccountName": "ypfzpstapcco001",
+    "storageAccountName": "[uniquestring(concat(resourceGroup().id, parameters('baseResourceName')))]",
     "appInsightsName": "ypfzpaincco001",
     "prepFunctionAppName": "ypfzpafacco001",
     "sendFunctionAppName": "ypfzpafacco002",
