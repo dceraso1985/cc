@@ -946,7 +946,7 @@ function logout {
     }
 
 # Create User App
-    $userAppCred = CreateAzureADApp $parameters.baseresourcename.Value
+    $userAppCred = CreateAzureADApp 'ypfzpwabcco001'
     if ($null -eq $userAppCred) {
         WriteE -message "Failed to create or update User app in Azure Active Directory. Exiting..."
         logout
@@ -954,7 +954,7 @@ function logout {
     }
 
 # Create Author App
-    $authorsApp = $parameters.baseResourceName.Value + '-authors'
+    $authorsApp = 'ypfzpwabcco002'
     $authorAppCred = CreateAzureADApp $authorsApp
     if ($null -eq $authorAppCred) {
         WriteE -message "Failed to create or update the Author app in Azure Active Directory. Exiting..."
